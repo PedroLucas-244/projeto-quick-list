@@ -1,0 +1,150 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+}
+
+.logo-container{
+    margin-top: 1.563rem;
+    margin-bottom: 3.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 38rem;
+}
+
+.container header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2.75rem;
+}
+
+.go-back{
+    color: var(--color-brand);
+    font-size: 0.875rem;
+
+    &:hover{
+        color: var(--color-brand-hover);
+    }
+}
+
+h1{
+    color: var(--content-primary);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+.add-item, .item-list, .alert-mensage{
+    width: 39.188rem;
+    max-width: 39.188rem;
+}
+
+.add-item{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.add-item input{
+    padding: 0.688rem 1.125rem;
+    border: 2px solid var(--border-primary);
+    border-radius: 0.75rem;
+    width: 71%;
+    color: var(--content-tertiary);
+    font-size: 1rem;
+    outline: none;
+    
+}
+
+.add-item button{
+    background-color: var(--color-brand);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--color-brand-hover);
+    }
+}
+
+.item-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2.25rem;
+}
+
+.item-list .list-item{
+    background-color: #fff;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.75rem;
+    position: relative;    
+}
+
+.item-list .list-item input{
+    margin-right: 0.531rem;
+}
+
+.item-list .list-item span{
+    color: var(--content-secondary);
+    font-size: 1rem;
+}
+
+.item-list .list-item button{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    & img{
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.alert-mensage{
+    background-color: var(--color-danger);
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.75rem;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.alert-mensage #close-alert-mensage{
+    cursor: pointer;
+}
+
+
+.alert-mensage span{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+        transform: translateX(15.625);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
