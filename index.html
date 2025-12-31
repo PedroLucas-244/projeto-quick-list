@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Projeto Lista de Compras</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="assets/logo.svg" alt="Logo">
+    </div>
+
+
+    <main class="container">
+        <header>
+            <a class="go-back" href="#">Voltar</a>
+
+            <h1>Compras da Semana</h1>
+        </header>
+
+        <div class="add-item">
+            <input type="text" placeholder="Adicione um novo item" id="input-add-item">
+            <button id="button-add-item">Adicionar item</button>
+        </div>
+
+
+        <ul class="item-list">
+            <li class="list-item">
+                <input type="checkbox">
+                <span>Pão de forma</span>
+
+                <button id="button-delete-item">
+                    <img src="./assets/icons/icone-lixeira.svg" alt="Icone de lixeira">
+                </button>
+            </li>
+
+            <li class="list-item">
+                <input type="checkbox">
+                <span>Café Preto</span>
+
+                <button id="button-delete-item">
+                    <img src="./assets/icons/icone-lixeira.svg" alt="Icone de lixeira">
+                </button>
+            </li>
+
+            <li class="list-item">
+                <input type="checkbox">
+                <span>Suco de laranja</span>
+
+                <button id="button-delete-item">
+                    <img src="./assets/icons/icone-lixeira.svg" alt="Icone de lixeira">
+                </button>
+            </li>
+
+            <li class="list-item">
+                <input type="checkbox">
+                <span>Bolacha</span>
+
+                <button id="button-delete-item">
+                    <img src="./assets/icons/icone-lixeira.svg" alt="Icone de lixeira">
+                </button>
+            </li>
+        </ul>
+
+
+        <div class="alert-mensage hide">
+            <img src="assets/icons/warning-icon.svg" alt="Icone de alerta">
+
+            <span>O item foi removido da lista</span>
+
+            <button id="close-alert-mensage">
+                <img src="assets/icons/delete-icon.svg" alt="Icone de fechar">
+            </button>
+        </div>
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
