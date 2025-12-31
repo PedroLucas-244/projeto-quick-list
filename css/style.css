@@ -94,6 +94,7 @@ h1{
 
 .item-list .list-item input{
     margin-right: 0.531rem;
+    accent-color: var(--color-brand);
 }
 
 .item-list .list-item span{
