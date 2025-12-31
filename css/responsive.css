@@ -1,0 +1,38 @@
+@media (max-width: 640px) {
+    .logo-container{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .go-back{
+        margin-top: 2.125rem;
+    }
+
+    .container{
+        align-items: center;
+    }
+
+    .add-item{
+        flex-direction: column;
+        width: 20.375rem;
+
+        & input, button{
+            width: 100%;
+        }
+    }
+
+    .item-list{
+        width: 20.375rem;
+
+        & li{
+            width: 100%;
+        }
+    }
+
+    .alert-mensage{
+        width: 20.375rem;
+    }
+}
