@@ -129,7 +129,6 @@ h1{
     cursor: pointer;
 }
 
-
 .alert-mensage span{
     color: #fff;
     font-size: 1rem;
@@ -142,10 +141,8 @@ h1{
 @keyframes fade-in{
     from{
         opacity: 0;
-        transform: translateX(15.625);
     }
     to{
         opacity: 1;
-        transform: translateX(0);
     }
 }
